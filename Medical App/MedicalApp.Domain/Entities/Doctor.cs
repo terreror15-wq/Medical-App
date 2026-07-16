@@ -17,7 +17,7 @@ namespace MedicalApp.Domain.Entities
 
         public Specialy Specialy { get; set; } = null!;
         public ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
-        public ICollection<MedicalHistory> Historiales { get; set; } = new List<MedicalHistory>();
+        public ICollection<MedicalHistory> Histories { get; set; } = new List<MedicalHistory>();
         public ICollection<Recipe> Recetas { get; set; } = new List<Recipe>();
     }
 }
