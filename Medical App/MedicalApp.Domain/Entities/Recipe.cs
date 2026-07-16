@@ -5,18 +5,18 @@ using MedicalApp.Domain.Core;
 
 namespace MedicalApp.Domain.Entities
 {
-    public class Recipe: BaseEntity
+    public class Recipe : BaseEntity
     {
         public DateTime EmisionDate { get; set; } = DateTime.UtcNow;
         public string? Obsevation { get; set; }
 
-        /*
-         Traducir al ingles 
-           public int PacienteId { get; set; }
-    public Paciente Paciente { get; set; } = null!;
-    public int DoctorId { get; set; }
-    public Doctor Doctor { get; set; } = null!;
-    public ICollection<RecetaDetalle> Detalles { get; set; } = new List<RecetaDetalle>();
-         */
+
+
+        public int AppointmentId { get; set; }
+        public Appointment Appointment { get; set; } = null!;
+        public int DoctorId { get; set; }
+        public Doctor Doctor { get; set; } = null!;
+        public ICollection<RecipeDetail> Detalles { get; set; } = new List<RecipeDetail>();
+
     }
 }
