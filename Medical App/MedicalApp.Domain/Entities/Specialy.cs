@@ -11,7 +11,7 @@ namespace MedicalApp.Domain.Entities
         public string? Name { get; set; }
         public string? Description { get; set; }
 
-        // public ICollection<Doctor> Doctores { get; set; } = new List<Doctor>();
+        public ICollection<Doctor> Doctors { get; set; } = new List<Doctor>();
 
     }
 }

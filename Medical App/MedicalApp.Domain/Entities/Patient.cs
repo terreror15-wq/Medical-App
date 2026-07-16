@@ -8,19 +8,19 @@ namespace MedicalApp.Domain.Entities
     public class Patient
     {
         public int Id { get; set; }
-        public string Nombres { get; set; } = string.Empty;
-        public string Apellidos { get; set; } = string.Empty;
-        public string DocumentoIdentidad { get; set; } = string.Empty;
-        public DateTime FechaNacimiento { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string LastName { get; set; } = string.Empty;
+        public string IdentityDocument { get; set; } = string.Empty;
+        public DateTime DateBirth { get; set; }
         //public Genero Genero { get; set; }
-        public string? Telefono { get; set; }
+        public string? Phone { get; set; }
         public string? Email { get; set; }
-        public string? Direccion { get; set; }
-        public DateTime FechaRegistro { get; set; } = DateTime.UtcNow;
-        public bool Activo { get; set; } = true;
-        //public ICollection<Cita> Citas { get; set; } = new List<Cita>();
-        //public ICollection<HistorialMedico> Historiales { get; set; } = new List<HistorialMedico>();
-        //public ICollection<Receta> Recetas { get; set; } = new List<Receta>();
+        public string? Address { get; set; }
+        public DateTime DateRegister { get; set; } = DateTime.UtcNow;
+        public bool Active { get; set; } = true;
+        public ICollection<Appointment> Appointment { get; set; } = new List<Appointment>();
+        public ICollection<MedicalHistory> Histories { get; set; } = new List<MedicalHistory>();
+        public ICollection<Recipe> Recetas { get; set; } = new List<Recipe>();
 
     }
 }

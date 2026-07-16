@@ -12,7 +12,7 @@ namespace MedicalApp.Domain.Entities
         public string? concetration { get; set; }
         public string? Laboratory { get; set; }
 
-        //public ICollection<RecipeDetail> RecipeDetail {get;set;}= new List <RecipeDetail>();
+        public ICollection<RecipeDetail> RecipeDetail {get;set;}= new List <RecipeDetail>();
 
         
     }

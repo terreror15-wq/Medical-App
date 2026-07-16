@@ -8,9 +8,9 @@ namespace MedicalApp.Domain.Entities
 {
     public class MedicalOffice : BaseEntity
     {
-        public string Numero { get; set; } = string.Empty;
-        public string? Piso { get; set; }
+        public string DoorNumber { get; set; } = string.Empty;
+        public string? Floor { get; set; }
         public string? Descripcion { get; set; }
-        //public ICollection<Cita> Citas { get; set; } = new List<Cita>();
+        public ICollection<Appointment> Citas { get; set; } = new List<Appointment>();
     }
 }
