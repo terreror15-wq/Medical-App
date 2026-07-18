@@ -7,7 +7,7 @@ namespace MedicalApp.Domain.Entities
 {
     public class Doctor
     {
-     public string Name { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
         public string RegistrationNumber { get; set; } = string.Empty;
         public string? Phone { get; set; }
