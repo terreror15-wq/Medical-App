@@ -9,6 +9,7 @@ using MedicalApp.Domain.Entities;
 
 namespace MedicalApp.Application.Services
 {
+
     public class DoctorService(IDoctorRepository repo) : IDoctorService
     {
         public async Task AddDoctor(CreateDoctorDTO doctor)
@@ -21,12 +22,16 @@ namespace MedicalApp.Application.Services
                 Email = doctor.Email,
                 Active = doctor.Active
             };
+
             await repo.AddDoctor(doctorDTOs);
         }
 
         public async Task<ReadDoctorDTO> GetDoctorById(int id)
         {
+
             var doc = await repo.GetDoctorById(id);
+
+
 
             var docDto = new ReadDoctorDTO
             {
@@ -74,7 +79,5 @@ namespace MedicalApp.Application.Services
 
             await repo.UpdateDoctor(doctorDTOs, id);
         }
-
-
     }
 }
