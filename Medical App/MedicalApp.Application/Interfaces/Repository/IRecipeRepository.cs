@@ -11,9 +11,9 @@ namespace MedicalApp.Application.Interfaces
     {
         public Task<IEnumerable<Recipe>>GetAllRecipe();
         public Task<Recipe>GetRecipeById(int id);
-        public Task<Recipe>AddRecipe(Recipe recipe);
-        public Task<Recipe>RemuveRecipe(int id);
-        public Task<Recipe> UpdateRecipe(int id, Recipe recipe);
+        public Task AddRecipe(Recipe recipe);
+        public Task RemuveRecipe(int id);
+        public Task UpdateRecipe(int id, Recipe recipe);
 
     }
 }

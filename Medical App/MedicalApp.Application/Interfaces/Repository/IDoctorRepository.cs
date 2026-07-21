@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MedicalApp.Application.DTOs.DoctorDTOs;
 using MedicalApp.Domain.Entities;
 
 namespace MedicalApp.Application.Interfaces.Repository

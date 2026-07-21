@@ -11,8 +11,8 @@ namespace MedicalApp.Application.Interfaces
     {
         public Task<IEnumerable<Medicine>>GetAllMedicine();
         public Task<Medicine>GetMedicineById(int id);
-        public Task<Medicine>UpdateMedicine(int id, Medicine medicine);
-        public Task<Medicine>RemuveMedicine(int id);
-        public Task<Medicine>AddMedicine(Medicine medicine);
+        public Task UpdateMedicine(int id, Medicine medicine);
+        public Task RemuveMedicine(int id);
+        public Task AddMedicine(Medicine medicine);
     }
 }
