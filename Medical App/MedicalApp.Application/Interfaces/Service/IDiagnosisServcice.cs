@@ -1,4 +1,5 @@
-﻿using MedicalApp.Domain.Entities;
+﻿using MedicalApp.Application.DTOs.DiagnosisDTOs;
+using MedicalApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace MedicalApp.Application.Service
 {
     public interface IDiagnosisServcice
     {
-        public Task<Diagnosis> GetDiagnosisById(int id);
-        public Task<IEnumerable<Diagnosis>> GetAllDiagnosis();
-        public Task<Diagnosis> UpdateDiagnosis(int id, Diagnosis diagnosis);
-        public Task<Diagnosis> RemuveDiagnosis(int id);
-        public Task<Diagnosis> AddDiagnosis(Diagnosis diagnosis);
+        public Task<ReadDiagnosisDTOs> GetDiagnosisById(int id);
+        public Task<IEnumerable<ReadDiagnosisDTOs>> GetAllDiagnosis();
+        public Task UpdateDiagnosis(int id, CreateDiagnosisDTOs diagnosis);
+        public Task RemuveDiagnosis(int id);
+        public Task AddDiagnosis(CreateDiagnosisDTOs diagnosis);
     }
 }

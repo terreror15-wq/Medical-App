@@ -8,7 +8,7 @@ namespace MedicalApp.Domain.Interfaces.Services
 {
     public interface IAppointmentService
     {
-        public Task<ReadAppointmentDTOs> GetAppointmentById();
+        public Task<ReadAppointmentDTOs> GetAppointmentById(int id);
         public Task<IEnumerable<ReadAppointmentDTOs>> GetAppointment();
         public Task AddAppointment(CreateAppointmentDTOs appointment);
         public Task RemoveAppointment(int id);
