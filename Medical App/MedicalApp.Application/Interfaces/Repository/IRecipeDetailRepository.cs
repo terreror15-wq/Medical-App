@@ -10,9 +10,9 @@ namespace MedicalApp.Application.Interfaces
     public interface IRecipeDetailRepository
     {
         public Task<IEnumerable<RecipeDetail>> GetAllRecipeDetail();
-        public Task<RecipeDetail>GetRecipeDetailById(int id);
-        public Task<RecipeDetail>AddRecipeDetail(RecipeDetail recipedetail);
-        public Task<RecipeDetail>RemuveRecipeDetail(int id);
-        public Task<RecipeDetail> UpdateRecipeDetail(RecipeDetail recipeDetail, int id);
+        public Task<RecipeDetail> GetRecipeDetailById(int id);
+        public Task AddRecipeDetail(RecipeDetail recipedetail);
+        public Task RemuveRecipeDetail(int id);
+        public Task UpdateRecipeDetail(RecipeDetail recipeDetail, int id);
     }
 }

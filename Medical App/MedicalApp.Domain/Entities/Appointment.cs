@@ -10,7 +10,7 @@ namespace MedicalApp.Domain.Entities
     {
 
         public DateTime Date { get; set; }
-        public string Status { get; set; }
+        public string? Status { get; set; }
         public string ReasonForVisit { get; set; } = string.Empty;
         public string? Observations { get; set; }
         public DateTime CraateTime { get; set; } = DateTime.UtcNow;

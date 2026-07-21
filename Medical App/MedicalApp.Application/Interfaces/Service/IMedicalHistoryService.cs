@@ -1,4 +1,5 @@
-﻿using MedicalApp.Domain.Entities;
+﻿using MedicalApp.Application.DTOs.MedicalHistoryDTOs;
+using MedicalApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace MedicalApp.Application.Service
 {
     public interface IMedicalHistoryService
     {
-        public Task<IEnumerable<MedicalHistory>> GetMedicalHistoryById(int id);
-        public Task<MedicalHistory> GetAllMedicalHistory();
-        public Task<MedicalHistory> RemuveMEdicalHistory(int id);
-        public Task<MedicalHistory> UpdateMedicalHistory(int id, MedicalHistory Medicalhistory);
-        public Task<MedicalHistory> AddMedicalHistory(MedicalHistory medicalhistory);
+        public Task<IEnumerable<ReadMedicalHistoryDTOs>> GetMedicalHistoryById(int id);
+        public Task<ReadMedicalHistoryDTOs> GetAllMedicalHistory();
+        public Task RemuveMEdicalHistory(int id);
+        public Task UpdateMedicalHistory(int id, CreateMedicalHistoryDTOs Medicalhistory);
+        public Task AddMedicalHistory(CreateMedicalHistoryDTOs medicalhistory);
     }
 }

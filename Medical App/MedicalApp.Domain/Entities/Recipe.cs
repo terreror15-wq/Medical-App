@@ -9,9 +9,6 @@ namespace MedicalApp.Domain.Entities
     {
         public DateTime EmisionDate { get; set; } = DateTime.UtcNow;
         public string? Obsevation { get; set; }
-
-
-
         public int AppointmentId { get; set; }
         public Appointment Appointment { get; set; } = null!;
         public int DoctorId { get; set; }

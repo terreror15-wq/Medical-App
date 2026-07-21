@@ -1,4 +1,5 @@
-﻿using MedicalApp.Domain.Entities;
+﻿using MedicalApp.Application.DTOs.RecipeDTOs;
+using MedicalApp.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,10 @@ namespace MedicalApp.Application.Service
 {
     public interface IRecipeService
     {
-        public Task<IEnumerable<Recipe>> GetAllRecipe();
-        public Task<Recipe> GetRecipeById(int id);
-        public Task<Recipe> AddRecipe(Recipe recipe);
-        public Task<Recipe> RemuveRecipe(int id);
-        public Task<Recipe> UpdateRecipe(int id, Recipe recipe);
+        public Task<IEnumerable<ReadRecibeDTO>> GetAllRecipe();
+        public Task<ReadRecibeDTO> GetRecipeById(int id);
+        public Task AddRecipe(CreatedRecipeDTO recipe);
+        public Task RemuveRecipe(int id);
+        public Task UpdateRecipe(int id, CreatedRecipeDTO recipe);
     }
 }
