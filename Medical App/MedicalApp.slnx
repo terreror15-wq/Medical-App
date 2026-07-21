@@ -1,6 +1,0 @@
-<Solution>
-  <Project Path="MedicalApp.Api/MedicalApp.Api.csproj" />
-  <Project Path="MedicalApp.Application/MedicalApp.Application.csproj" />
-  <Project Path="MedicalApp.Domain/MedicalApp.Domain.csproj" />
-  <Project Path="MedicalApp.Infraestructure/MedicalApp.Infraestructure.csproj" />
-</Solution>
